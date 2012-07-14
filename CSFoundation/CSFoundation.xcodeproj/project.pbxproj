@@ -1,0 +1,237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6C3E9D615B1CCAD00F4E749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3E9D515B1CCAD00F4E749 /* Foundation.framework */; };
+		D6C3E9F415B1CD8200F4E749 /* CSConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C3E9F215B1CD8200F4E749 /* CSConfiguration.h */; };
+		D6C3E9F515B1CD8200F4E749 /* CSConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3E9F315B1CD8200F4E749 /* CSConfiguration.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6C3E9D215B1CCAD00F4E749 /* libCSFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCSFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C3E9D515B1CCAD00F4E749 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6C3E9D915B1CCAD00F4E749 /* CSFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSFoundation-Prefix.pch"; sourceTree = "<group>"; };
+		D6C3E9F215B1CD8200F4E749 /* CSConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSConfiguration.h; sourceTree = "<group>"; };
+		D6C3E9F315B1CD8200F4E749 /* CSConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSConfiguration.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6C3E9CF15B1CCAD00F4E749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C3E9D615B1CCAD00F4E749 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6C3E9C715B1CCAD00F4E749 = {
+			isa = PBXGroup;
+			children = (
+				D6C3E9D715B1CCAD00F4E749 /* CSFoundation */,
+				D6C3E9D415B1CCAD00F4E749 /* Frameworks */,
+				D6C3E9D315B1CCAD00F4E749 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6C3E9D315B1CCAD00F4E749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6C3E9D215B1CCAD00F4E749 /* libCSFoundation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6C3E9D415B1CCAD00F4E749 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C3E9D515B1CCAD00F4E749 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6C3E9D715B1CCAD00F4E749 /* CSFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				D6C3E9F215B1CD8200F4E749 /* CSConfiguration.h */,
+				D6C3E9F315B1CD8200F4E749 /* CSConfiguration.m */,
+				D6C3E9D815B1CCAD00F4E749 /* Supporting Files */,
+			);
+			path = CSFoundation;
+			sourceTree = "<group>";
+		};
+		D6C3E9D815B1CCAD00F4E749 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6C3E9D915B1CCAD00F4E749 /* CSFoundation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D6C3E9D015B1CCAD00F4E749 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C3E9F415B1CD8200F4E749 /* CSConfiguration.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D6C3E9D115B1CCAD00F4E749 /* CSFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6C3E9DF15B1CCAD00F4E749 /* Build configuration list for PBXNativeTarget "CSFoundation" */;
+			buildPhases = (
+				D6C3E9CE15B1CCAD00F4E749 /* Sources */,
+				D6C3E9CF15B1CCAD00F4E749 /* Frameworks */,
+				D6C3E9D015B1CCAD00F4E749 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSFoundation;
+			productName = CSFoundation;
+			productReference = D6C3E9D215B1CCAD00F4E749 /* libCSFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6C3E9C915B1CCAD00F4E749 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "CommonSense srl";
+			};
+			buildConfigurationList = D6C3E9CC15B1CCAD00F4E749 /* Build configuration list for PBXProject "CSFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D6C3E9C715B1CCAD00F4E749;
+			productRefGroup = D6C3E9D315B1CCAD00F4E749 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6C3E9D115B1CCAD00F4E749 /* CSFoundation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6C3E9CE15B1CCAD00F4E749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C3E9F515B1CD8200F4E749 /* CSConfiguration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D6C3E9DD15B1CCAD00F4E749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6C3E9DE15B1CCAD00F4E749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6C3E9E015B1CCAD00F4E749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CSFoundation.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSFoundation/CSFoundation-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D6C3E9E115B1CCAD00F4E749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CSFoundation.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSFoundation/CSFoundation-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6C3E9CC15B1CCAD00F4E749 /* Build configuration list for PBXProject "CSFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C3E9DD15B1CCAD00F4E749 /* Debug */,
+				D6C3E9DE15B1CCAD00F4E749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6C3E9DF15B1CCAD00F4E749 /* Build configuration list for PBXNativeTarget "CSFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C3E9E015B1CCAD00F4E749 /* Debug */,
+				D6C3E9E115B1CCAD00F4E749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6C3E9C915B1CCAD00F4E749 /* Project object */;
+}
