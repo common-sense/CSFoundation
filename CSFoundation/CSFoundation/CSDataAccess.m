@@ -7,7 +7,6 @@
 //
 
 #import "CSDataAccess.h"
-#import "AppDelegate.h"
 
 /*
 @interface NSSet(PredicateSupport)
@@ -39,12 +38,14 @@
 
 +(NSManagedObjectContext*)managedObjectContext;
 {
-    return [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
+    return [[[UIApplication sharedApplication] delegate] performSelector:@selector(managedObjectContext)];
+//    return [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
 }
 
 + (NSArray*)LoadObjects:(NSString*)entityName withPredicate:(NSPredicate*)predicate sortBy:(NSString*)sort error:(NSError **)error;    
 {
-    NSManagedObjectContext *moc = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
+    NSManagedObjectContext *moc = [CSDataAccess managedObjectContext];
+    
     NSEntityDescription *entityDescription = [NSEntityDescription
                                                 entityForName:entityName inManagedObjectContext:moc];
     // carica dati famiglia
@@ -61,11 +62,9 @@
         NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
                                             initWithKey:sort ascending:YES];
         [request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
-        [sortDescriptor release];        
     }
     
     NSArray *array = [moc executeFetchRequest:request error:error];  
-    [request release];
     
     return array;
 }
@@ -74,7 +73,7 @@
 {
     NSMutableArray* results = [NSMutableArray array];
     NSError* error;
-    NSManagedObjectContext *moc = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
+    NSManagedObjectContext *moc = [CSDataAccess managedObjectContext];
     NSEntityDescription *entityDescription = [NSEntityDescription
                                               entityForName:entityName inManagedObjectContext:moc];
 
@@ -92,10 +91,8 @@
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
                                         initWithKey:propertyName ascending:YES];
     [request setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
-    [sortDescriptor release];
     
     NSArray *array = [moc executeFetchRequest:request error:&error];  
-    [request release];
 
     if (array == nil)
     {
@@ -113,7 +110,7 @@
 
 +(id)GetMaxValue:(NSString*)propertyName forEntity:(NSString*)entityName withPredicate:(NSPredicate*)predicate;
 {
-    NSManagedObjectContext *moc = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
+    NSManagedObjectContext *moc = [CSDataAccess managedObjectContext];
 
     // setup request
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
@@ -144,11 +141,9 @@
    
     // modify request to fetch only the attribute
     [request setPropertiesToFetch:[NSArray arrayWithObject:propertyToFetch]];
-    [propertyToFetch release];
 
     // execute fetch
     NSArray *results = [moc executeFetchRequest:request error:nil];
-    [request release];
 
     // get value
     if ([results count] > 0) {
@@ -161,7 +156,7 @@
 
 +(id)GetSumValue:(NSString*)propertyName forEntity:(NSString*)entityName withPredicate:(NSPredicate*)predicate;
 {
-    NSManagedObjectContext *moc = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
+    NSManagedObjectContext *moc = [CSDataAccess managedObjectContext];
     
     // setup request
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
@@ -192,11 +187,9 @@
     
     // modify request to fetch only the attribute
     [request setPropertiesToFetch:[NSArray arrayWithObject:propertyToFetch]];
-    [propertyToFetch release];
     
     // execute fetch
     NSArray *results = [moc executeFetchRequest:request error:nil];
-    [request release];
     
     // get value
     if ([results count] > 0) {
@@ -210,7 +203,7 @@
 
 + (void) deleteAllObjects: (NSString *) entityDescription  {
     
-    NSManagedObjectContext *moc = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
+    NSManagedObjectContext *moc = [CSDataAccess managedObjectContext];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:entityDescription inManagedObjectContext:moc];
@@ -218,7 +211,6 @@
     
     NSError *error;
     NSArray *items = [moc executeFetchRequest:fetchRequest error:&error];
-    [fetchRequest release];
     
     
     for (NSManagedObject *managedObject in items) {
@@ -235,7 +227,7 @@
     return [NSEntityDescription insertNewObjectForEntityForName:entityName inManagedObjectContext:[CSDataAccess managedObjectContext]];
 }
 
-
+/*
 + (NSString *)createUUID
 {
     // Create universally unique identifier (object)
@@ -256,6 +248,6 @@
     CFRelease(uuidObject);
     
     return uuidStr;
-}
+}*/
 
 @end
