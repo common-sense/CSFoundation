@@ -15,6 +15,8 @@
 		D6C3E9D615B1CCAD00F4E749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3E9D515B1CCAD00F4E749 /* Foundation.framework */; };
 		D6C3E9F415B1CD8200F4E749 /* CSConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C3E9F215B1CD8200F4E749 /* CSConfiguration.h */; };
 		D6C3E9F515B1CD8200F4E749 /* CSConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3E9F315B1CD8200F4E749 /* CSConfiguration.m */; };
+		D6C3EA2315B1EC0800F4E749 /* CSLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C3EA2115B1EC0800F4E749 /* CSLocation.h */; };
+		D6C3EA2415B1EC0800F4E749 /* CSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3EA2215B1EC0800F4E749 /* CSLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		D6C3E9D915B1CCAD00F4E749 /* CSFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSFoundation-Prefix.pch"; sourceTree = "<group>"; };
 		D6C3E9F215B1CD8200F4E749 /* CSConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSConfiguration.h; sourceTree = "<group>"; };
 		D6C3E9F315B1CD8200F4E749 /* CSConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSConfiguration.m; sourceTree = "<group>"; };
+		D6C3EA2115B1EC0800F4E749 /* CSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLocation.h; sourceTree = "<group>"; };
+		D6C3EA2215B1EC0800F4E749 /* CSLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				D6925C4115BA06F60001E6F6 /* CSDataAccess.m */,
 				D6C3E9F215B1CD8200F4E749 /* CSConfiguration.h */,
 				D6C3E9F315B1CD8200F4E749 /* CSConfiguration.m */,
+				D6C3EA2115B1EC0800F4E749 /* CSLocation.h */,
+				D6C3EA2215B1EC0800F4E749 /* CSLocation.m */,
 				D6C3E9D815B1CCAD00F4E749 /* Supporting Files */,
 			);
 			path = CSFoundation;
@@ -119,6 +125,7 @@
 				D6C3E9F415B1CD8200F4E749 /* CSConfiguration.h in Headers */,
 				D6925C4215BA06F60001E6F6 /* CSDataAccess.h in Headers */,
 				D6925CAC15BB52DE0001E6F6 /* SVProgressHUD.h in Headers */,
+				D6C3EA2315B1EC0800F4E749 /* CSLocation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +183,7 @@
 				D6C3E9F515B1CD8200F4E749 /* CSConfiguration.m in Sources */,
 				D6925C4315BA06F60001E6F6 /* CSDataAccess.m in Sources */,
 				D6925CAD15BB52DE0001E6F6 /* SVProgressHUD.m in Sources */,
+				D6C3EA2415B1EC0800F4E749 /* CSLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
