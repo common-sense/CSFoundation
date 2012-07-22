@@ -25,6 +25,4 @@
 + (void) deleteAllObjects: (NSString *) entityDescription;
 +(NSManagedObject*)createObjectForEntity:(NSString*)entityName;
 
-+ (NSString *)createUUID;
-
 @end
